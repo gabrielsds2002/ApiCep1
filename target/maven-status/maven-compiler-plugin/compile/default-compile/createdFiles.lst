@@ -1,5 +1,6 @@
 br\com\brq\api\cep\domain\AcessoRequest.class
 br\com\brq\api\cep\domain\AcessoResponse.class
+br\com\brq\api\cep\business\RegraDeNegocioBO.class
 br\com\brq\api\cep\services\CepService.class
 br\com\brq\api\cep\exceptions\AppException.class
 br\com\brq\api\cep\controller\AppController.class
