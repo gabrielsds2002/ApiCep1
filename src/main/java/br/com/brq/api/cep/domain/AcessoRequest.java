@@ -11,8 +11,12 @@ import lombok.Setter;
 @Setter
 public class AcessoRequest {
 	
-	@NotNull
-	@NotEmpty
+
 	private String cep;
+	
+	public String getCep() {
+		return cep;
+	}
+	
 
 }

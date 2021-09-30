@@ -9,6 +9,9 @@ import br.com.brq.api.cep.domain.AcessoResponse;
 @Service
 public class RegraDeNegocioBO {
 	
+	public static final String CEP_COM_ESPAÇO =" ";
+	public static final String CEP_SEM_ESPAÇO ="";
+
 	public AcessoResponse validaCep(AcessoRequest acessoRequest) {
 
 		AcessoResponse response = new AcessoResponse();
@@ -16,7 +19,7 @@ public class RegraDeNegocioBO {
 			throw new AppException("Digite um CEP valido");
 		} else if (acessoRequest.getCep().length() > 9) {
 			throw new AppException("Digite um CEP valido");
-		} else if (acessoRequest == null) {
+		} else if (acessoRequest == null || acessoRequest.getCep().isEmpty()||  acessoRequest.getCep() == " ") {
 			throw new AppException("Valor nao pode ser nulo, digite um valor valido!");
 		}
 		return response;
