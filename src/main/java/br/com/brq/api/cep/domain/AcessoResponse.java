@@ -22,4 +22,11 @@ public class AcessoResponse {
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private int codigo;
 
+	
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
 }
