@@ -16,11 +16,11 @@ public class RegraDeNegocioBO {
 		AcessoResponse response = new AcessoResponse();
 		
 		 if (acessoRequest == null || acessoRequest.getCep().isEmpty()||  acessoRequest.getCep() == " ") {
-			throw new AppException("Valor nao pode ser nulo, digite um valor valido!");
+			throw new AppException("Valor não pode ser nulo, digite um valor valido!");
 		}else if (acessoRequest.getCep().length() < 8) {
-			throw new AppException("Digite um CEP valido");
+			throw new AppException("Digite um CEP valido!");
 		} else if (acessoRequest.getCep().length() > 9) {
-			throw new AppException("Digite um CEP valido");
+			throw new AppException("Digite um CEP valido!");
 		} 
 		return response;
 	}
